@@ -6,23 +6,23 @@ function App() {
   const [products, setProducts] = useState(null);
   const [search, setSearch] = useState("");
 
-  useEffect(() => {
-    fetchProducts();
-  }, []);
+  // useEffect(() => {
+  //   fetchProducts();
+  // }, []);
 
-  const fetchProducts = () => {
-    axios
-      .get("https://lattice.com/products")
-      .then((response) => {
-        console.log(response);
-        const info = response.data;
-        setProducts(info);
-        console.log(info);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
+  // const fetchProducts = () => {
+  //   axios
+  //     .get("https://lattice.com/products")
+  //     .then((response) => {
+  //       console.log(response);
+  //       const info = response.data;
+  //       setProducts(info);
+  //       console.log(info);
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // };
 
   const handleChange = (event) => {};
 
