@@ -58,6 +58,7 @@ function ProductsList() {
         label="In Stock Only"
       />
       <div>
+        Sporting Goods
         {products &&
           products
             .filter((product) => product.category === "Sporting Goods")
